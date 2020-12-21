@@ -1,1 +1,4 @@
-# go-developer
+# GO developer course by SkillBox
+
+
+
