@@ -17,9 +17,8 @@ func main() {
 	fmt.Println("b:", b)
 	fmt.Println()
 
-	tmp := a
-	a = b
-	b = tmp
+	// Если переменные имеют разный тип, то этот способ не сработает
+	a, b = b, a
 
 	fmt.Println("После:")
 	fmt.Println("a:", a)
