@@ -14,10 +14,10 @@ func main() {
 	fmt.Scan(&bilette)
 	fmt.Println()
 
-	segment0 := bilette/1000
-	segment1 := bilette%1000/100
-	segment2 := bilette%100/10
-	segment3 := bilette%10
+	segment0 := bilette / 1000
+	segment1 := bilette % 1000 / 100
+	segment2 := bilette % 100 / 10
+	segment3 := bilette % 10
 
 	message := ""
 
