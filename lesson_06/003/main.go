@@ -6,9 +6,7 @@ import (
 
 func main() {
 	fmt.Println()
-	fmt.Print("Задача 6.1. Расчет суммы скидки\n\n")
-
-	areRight := false
+	fmt.Print("Задача 6.3. Расчет суммы скидки\n\n")
 
 	var price int
 	var discount int
@@ -17,7 +15,7 @@ func main() {
 	fmt.Println("Введите цену товара: ")
 	fmt.Scan(&price)
 
-	for !areRight {
+	for true {
 		if discount != 0 {
 			fmt.Print("Скидка слишком велика, повторите ввод.\n\n")
 		}
@@ -32,7 +30,7 @@ func main() {
 		}
 
 		if discount <= 30 {
-			areRight = true
+			break
 		}
 	}
 
