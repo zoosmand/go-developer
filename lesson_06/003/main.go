@@ -15,7 +15,7 @@ func main() {
 	fmt.Println("Введите цену товара: ")
 	fmt.Scan(&price)
 
-	for true {
+	for {
 		if discount != 0 {
 			fmt.Print("Скидка слишком велика, повторите ввод.\n\n")
 		}

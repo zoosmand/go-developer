@@ -9,8 +9,6 @@ func main() {
 	fmt.Println("Задача 5.2. Проверка на положительное значение числа")
 	fmt.Println()
 
-	var isPositive bool = false
-
 	var firstDigit int
 	fmt.Println("Введите первое число: ")
 	fmt.Scan(&firstDigit)
@@ -23,10 +21,7 @@ func main() {
 	fmt.Println("Введите третье число: ")
 	fmt.Scan(&thirdDigit)
 
-	if (firstDigit > 0) || (secondDigit > 0) || (thirdDigit > 0) {
-		isPositive = true
-	}
-
+	isPositive := firstDigit > 0 || secondDigit > 0 || thirdDigit > 0
 
 	if isPositive {
 		fmt.Println("Как минимум одно число является положительным.")

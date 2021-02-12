@@ -12,7 +12,7 @@ func main() {
 	var second int
 	var third int
 
-	for true {
+	for {
 		if third >= 1000 {
 			break
 		}
