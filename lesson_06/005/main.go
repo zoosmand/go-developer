@@ -8,24 +8,49 @@ func main() {
 	fmt.Println()
 	fmt.Print("Задача 6.5. Наполнение корзин\n\n")
 
-	var firstBasket int
-	var secondBasket int
-	var thirdBasket int
+	firstBasket := 0
+	secondBasket := 0
+	thirdBasket := 0
+	firstBasketOpen := true
+	secondBasketOpen := true
+
+	// for {
+	// 	check := firstBasket < 6
+	// 	if check {
+	// 		firstBasket++
+	// 	}
+
+	// 	check = secondBasket < 4
+	// 	if check {
+	// 		secondBasket++
+	// 	}
+
+	// 	check = thirdBasket < 9
+	// 	if check {
+	// 		thirdBasket++
+	// 		continue
+	// 	}
+
+	// 	break
+	// }
 
 	for {
-		check := firstBasket < 6
-		if check {
+		if firstBasketOpen && firstBasket < 6 {
 			firstBasket++
+			firstBasketOpen = false
+			continue
 		}
 
-		check = secondBasket < 4
-		if check {
+		if secondBasketOpen && secondBasket < 4 {
 			secondBasket++
+			secondBasketOpen = false
+			continue
 		}
 
-		check = thirdBasket < 9
-		if check {
+		if thirdBasket < 9 {
 			thirdBasket++
+			firstBasketOpen = true
+			secondBasketOpen = true
 			continue
 		}
 
