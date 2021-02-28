@@ -11,46 +11,20 @@ func main() {
 	firstBasket := 0
 	secondBasket := 0
 	thirdBasket := 0
-	firstBasketOpen := true
-	secondBasketOpen := true
-
-	// for {
-	// 	check := firstBasket < 6
-	// 	if check {
-	// 		firstBasket++
-	// 	}
-
-	// 	check = secondBasket < 4
-	// 	if check {
-	// 		secondBasket++
-	// 	}
-
-	// 	check = thirdBasket < 9
-	// 	if check {
-	// 		thirdBasket++
-	// 		continue
-	// 	}
-
-	// 	break
-	// }
 
 	for {
-		if firstBasketOpen && firstBasket < 6 {
+		if firstBasket < 6 {
 			firstBasket++
-			firstBasketOpen = false
 			continue
 		}
 
-		if secondBasketOpen && secondBasket < 4 {
+		if secondBasket < 4 {
 			secondBasket++
-			secondBasketOpen = false
 			continue
 		}
 
 		if thirdBasket < 9 {
 			thirdBasket++
-			firstBasketOpen = true
-			secondBasketOpen = true
 			continue
 		}
 
