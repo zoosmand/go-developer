@@ -9,23 +9,20 @@ func main() {
 	fmt.Println()
 	fmt.Print("Задача 8.2.\n\n")
 
-	workingDaysShort := map[string]string{
-		"пн": "понедельник",
-		"вт": "вторник",
-		"ср": "средв",
-		"чт": "четверг",
-		"пт": "пятница",
-	}
+	workingDaysShort := [5]string{"пн", "вт", "ср", "чт", "пт"}
 
 	var inputDayName string
-	// fmt.Println("Введите день [ пн | вт | ср | чт | пт ]: ")
 	fmt.Println("Введите день", workingDaysShort)
 
 checkInputLoop:
 	for {
 		_, _ = fmt.Scan(&inputDayName)
-		if _, ok := workingDaysShort[inputDayName]; ok {
-			break checkInputLoop
+
+		for i := 0; i < len(workingDaysShort); i++ {
+			if workingDaysShort[i] == inputDayName {
+				break checkInputLoop
+			}
+
 		}
 
 		fmt.Println("Неверное значение! Введите день", workingDaysShort)
