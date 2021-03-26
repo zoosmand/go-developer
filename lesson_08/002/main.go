@@ -22,9 +22,7 @@ checkInputLoop:
 			if workingDaysShort[i] == inputDayName {
 				break checkInputLoop
 			}
-
 		}
-
 		fmt.Println("Неверное значение! Введите день", workingDaysShort)
 	}
 
