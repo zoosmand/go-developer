@@ -40,7 +40,7 @@ func main() {
 	case 9:
 	case 10:
 	case 11:
-		fmt.Println("Summer")
+		fmt.Println("Autumn")
 
 	default:
 		fmt.Println("Other")
