@@ -10,23 +10,30 @@ func main() {
 	fmt.Print("Задача 7.4. Максимальное расстояние между двумя счастливыми билетами\n\n")
 
 	distanceNextHappyTicket := 0
-	prevHappyTicket := 100000
+	growingDistance := 1
 
-	for i := 100000; i <= 999999; i++ {
-		head := i / 1000
-		tail := i % 1000
-		headSum := head/100 + head%10 + head/10%10
-		tailSum := tail/100 + tail%10 + tail/10%10
+	for i := 100; i <= 999; i++ {
+		// take digits from the iteration number "i", then sum them
+		m := i/100 + i%100/10 + i%10
 
-		if headSum == tailSum {
-			if distanceNextHappyTicket < i-prevHappyTicket {
-				distanceNextHappyTicket = i - prevHappyTicket
-				// fmt.Println(distanceNextHappyTicket)
+		for j := 0; j <= 999; j++ {
+
+			// take digits from the iteration number "j", then sum them
+			k := j/100 + j%100/10 + j%10
+
+			// increase distance counter if sums compare
+			// otherwise means the distance has found
+			if m != k {
+				distanceNextHappyTicket++
+			} else {
+				if growingDistance < distanceNextHappyTicket {
+
+					// increase the found number to 1 to get the right arithmetic number
+					growingDistance = distanceNextHappyTicket + 1
+					fmt.Println(growingDistance)
+				}
+				distanceNextHappyTicket = 0
 			}
-			prevHappyTicket = i
 		}
-
 	}
-
-	fmt.Println(distanceNextHappyTicket)
 }
