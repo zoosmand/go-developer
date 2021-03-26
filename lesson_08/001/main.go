@@ -10,7 +10,7 @@ func main() {
 	fmt.Print("Задача 8.1.\n\n")
 
 	var month int
-	fmt.Println("Введите высоту номер месяца от 1 до 12: ")
+	fmt.Println("Введите номер месяца от 1 до 12: ")
 
 	for {
 		_, _ = fmt.Scan(&month)
@@ -18,32 +18,32 @@ func main() {
 		if month >= 1 && month <= 12 {
 			break
 		}
-		fmt.Println("Wrong! Введите высоту номер месяца от 1 до 12: ")
+		fmt.Println("Неверное значение! Введите номер месяца от 1 до 12: ")
 	}
 
 	switch month {
 	case 1:
 	case 2:
 	case 12:
-		fmt.Println("Winter")
+		fmt.Println("Зима")
 
 	case 3:
 	case 4:
 	case 5:
-		fmt.Println("Spring")
+		fmt.Println("Весна")
 
 	case 6:
 	case 7:
 	case 8:
-		fmt.Println("Summer")
+		fmt.Println("Лето")
 
 	case 9:
 	case 10:
 	case 11:
-		fmt.Println("Autumn")
+		fmt.Println("Осень")
 
 	default:
-		fmt.Println("Other")
+		fmt.Println("Что-то другое")
 	}
 
 	fmt.Println("---------------------")
