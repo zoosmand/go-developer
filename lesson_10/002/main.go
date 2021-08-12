@@ -32,10 +32,10 @@ func main() {
 			break
 		}
 	}
-	CalculateInterest(&d)
+	calculateInterest(&d)
 }
 
-func CalculateInterest(d *[]int) {
+func calculateInterest(d *[]int) {
 	months := 12 * (*d)[2]
 	deposit := float64((*d)[0])
 	interest := float64((*d)[1])

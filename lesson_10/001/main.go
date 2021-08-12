@@ -36,13 +36,13 @@ func main() {
 
 	fmt.Println("-----------------------------")
 	fmt.Print("e: ")
-	fmt.Println(CalcE(&d))
+	fmt.Println(calcE(&d))
 	fmt.Println("-----------------------------")
 }
 
-func CalcE(d *[]int) float64 {
+func calcE(d *[]int) float64 {
 	x := (*d)[0]
-	n := (*d)[1]	 
+	n := (*d)[1]
 	precision := 1 / math.Pow(float64(10), float64(n))
 
 	var myE float64
