@@ -23,3 +23,5 @@
 # Go debugger binary
 __debug_bin
 fig.py
+
+*log*

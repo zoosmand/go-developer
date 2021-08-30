@@ -14,12 +14,12 @@ func main() {
 	h := "Задача 11.2. Строки."
 	usrcons.PrintHeader(&h)
 
-	myLine := "a10 10 20b 20 30c30 30 dd"
+	myLine := "a10 10 20b 20 30C30 30 dd"
 	// myLine := "     "
 	// myLine := ""
 	myArray := strings.Split(myLine, " ")
 	myArraySize := len(myArray)
-	rule := regexp.MustCompile(`[a-f]`)
+	rule := regexp.MustCompile(`[a-f,A-F]`)
 
 	fmt.Println("------------------------------------------------")
 	for i := 0; i < myArraySize; i++ {
