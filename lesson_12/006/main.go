@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	h := "Задача 12.2. Лог файл. ioutil"
+	h := "Задача 12.6. Лог файл. ioutil"
 	usrcons.PrintHeader(&h)
 
 	logFile := "./log.txt"
