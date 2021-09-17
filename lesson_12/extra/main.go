@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	usrcons "../../packages/usrcons"
+	"github.com/zoosmand/usecons/v3"
 )
 
 func main() {
 	h := "Задача 12.7. Скобки"
-	usrcons.PrintHeader(&h)
+	fmt.Print(usecons.Header(&h))
 
 	// ----------------------------------------------------
 	invite := "Введите число."
@@ -24,9 +24,16 @@ func main() {
 			break
 		}
 	}
-	fmt.Println(num)
 
 	fmt.Println("------------------------------------------------")
+
+	simple()
+	fmt.Println("------------------------------------------------")
+
+	embrace(num)
+}
+
+func embrace(num int) {
 
 	var eLeft []byte
 	var eRight []byte
