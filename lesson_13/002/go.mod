@@ -1,4 +1,4 @@
-module lesson_13_2
+module lesson_13_002
 
 go 1.17
 

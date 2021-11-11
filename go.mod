@@ -1,4 +1,4 @@
-module lesson_13_001
+module sb_go_cource
 
 go 1.17
 
