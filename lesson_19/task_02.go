@@ -12,13 +12,13 @@ func mainTask02() {
 	fmt.Print(usecons.Header(&h))
 
 	arr100 := generateIntArray(100)
-	fmt.Printf("Исходный массив:\n%s\n\n", arrayToString(arr100))
+	fmt.Printf("Исходный массив:\n%v\n\n", arr100)
 
 	bubbleSortAsc(arr100)
-	fmt.Printf("Массив, отсортированный в прямом порядке пузырьками:\n%s\n\n", arrayToString(arr100))
+	fmt.Printf("Массив, отсортированный в прямом порядке пузырьками:\n%v\n\n", arr100)
 
 	bubbleSortDesc(arr100)
-	fmt.Printf("Массив, отсортированный в обратном порядке пузырьками:\n%s\n\n", arrayToString(arr100))
+	fmt.Printf("Массив, отсортированный в обратном порядке пузырьками:\n%v\n\n", arr100)
 }
 
 /* --------------------------------------------------------------------------------- */
