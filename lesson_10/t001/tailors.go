@@ -1,16 +1,16 @@
-package main
+package t001
 
 import (
 	"fmt"
 	"math"
 
-	usrcons "../../packages/usrcons"
+	"github.com/zoosmand/usecons/v3"
 )
 
-func main() {
+func TailorRow() {
 
 	h := "Задача 10.1. Разложение ex в ряд Тейлора."
-	usrcons.PrintHeader(&h)
+	usecons.Header(&h)
 
 	// ----------------------------------------------------
 	var consoleInput int

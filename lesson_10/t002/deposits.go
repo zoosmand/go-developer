@@ -1,15 +1,15 @@
-package main
+package t002
 
 import (
 	"fmt"
 	"math"
 
-	usrcons "../../packages/usrcons"
+	"github.com/zoosmand/usecons/v3"
 )
 
-func main() {
+func DepositCalc() {
 	h := "Задача 10.2. Рассчет размена банковского депозита."
-	usrcons.PrintHeader(&h)
+	usecons.Header(&h)
 
 	// ----------------------------------------------------
 	var consoleInput int
