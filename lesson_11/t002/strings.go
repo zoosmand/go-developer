@@ -1,4 +1,4 @@
-package main
+package t002
 
 import (
 	"fmt"
@@ -6,13 +6,13 @@ import (
 	"strconv"
 	"strings"
 
-	usrcons "../../packages/usrcons"
+	"github.com/zoosmand/usecons/v3"
 )
 
-func main() {
+func Strings() {
 
 	h := "Задача 11.2. Строки."
-	usrcons.PrintHeader(&h)
+	usecons.Header(&h)
 
 	myLine := "a10 10 20b 20 30C30 30 dd"
 	// myLine := "     "

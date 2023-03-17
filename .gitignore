@@ -15,13 +15,14 @@
 # vendor/
 
 # VSCode directories
-.vscode
+#.vscode
 
 # MacOS label
 .DS_Store
 
 # Go debugger binary
 __debug_bin
-fig.py
 
 *log*
+
+*.swp

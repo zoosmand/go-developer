@@ -1,17 +1,17 @@
-package main
+package t001
 
 import (
 	"fmt"
 	"regexp"
 	"strings"
 
-	usrcons "../../packages/usrcons"
+	"github.com/zoosmand/usecons/v3"
 )
 
-func main() {
+func Strings() {
 
 	h := "Задача 11.1. Строки."
-	usrcons.PrintHeader(&h)
+	usecons.Header(&h)
 
 	// ----------------------------------------------------
 	myLine := "Go is an Open source programming Language that makes it Easy to build simple, reliable, and efficient Software"
