@@ -1,4 +1,4 @@
-package main
+package task01
 
 import (
 	"fmt"
@@ -6,8 +6,8 @@ import (
 	"github.com/zoosmand/usecons/v3"
 )
 
-func mainTask02() {
-	h := "Задача 15.2. Функция, реверсирующая массив."
+func OddEvenCounter() {
+	h := "Задача 15.1. Подсчёт чётных и нечётных чисел в массиве."
 	fmt.Print(usecons.Header(&h))
 
 	const arrLen int = 10
@@ -32,16 +32,19 @@ func mainTask02() {
 			}
 		}
 	}
+	// send slice of the orig array "digits" full of length as a paramater
+	evenCount, oddCount := oddEvenCounter(digits[0:])
 
-	fmt.Printf("\nИсходный массив: %v\n", digits)
-	reverseIntArray(digits[0:])
-	fmt.Printf("Результат:       %v\n\n", digits)
+	fmt.Printf("\nЧетные: %v, нечетные: %v\n\n", evenCount, oddCount)
 }
 
-func reverseIntArray(arr []int) {
-	l := len(arr)
-
-	for i := 0; i < l/2; i++ {
-		arr[i], arr[l-i-1] = arr[l-i-1], arr[i]
+func oddEvenCounter(arr []int) (oddCount int, evenCount int) {
+	for _, v := range arr {
+		if v%2 == 0 {
+			evenCount++
+		} else {
+			oddCount++
+		}
 	}
+	return oddCount, evenCount
 }

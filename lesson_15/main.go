@@ -1,6 +1,11 @@
 package main
 
+import (
+	"lesson_15/zoosmand/task01"
+	"lesson_15/zoosmand/task02"
+)
+
 func main() {
-	mainTask01()
-	mainTask02()
+	task01.OddEvenCounter()
+	task02.ReverseIntArray()
 }
