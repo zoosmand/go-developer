@@ -1,23 +1,26 @@
-package main
+package task01
 
 import (
 	"fmt"
+
+	"lesson_19/zoosmand/requisites"
+	"lesson_19/zoosmand/task02"
 
 	"github.com/zoosmand/usecons/v3"
 )
 
 /* --------------------------------------------------------------------------------- */
-func mainTask01() {
+func JoinSortedArrays() {
 	h := "Задача 19.1. Слияние отсортированных массивов."
 	fmt.Print(usecons.Header(&h))
 
-	arr4 := generateIntArray(4)
-	arr5 := generateIntArray(5)
+	arr4 := requisites.GenerateIntArray(4)
+	arr5 := requisites.GenerateIntArray(5)
 
 	fmt.Printf("Исходные массивы:\n%v\n%v\n\n", arr4, arr5)
 
-	bubbleSortAsc(arr4)
-	bubbleSortAsc(arr5)
+	task02.BubbleSortAsc(arr4)
+	task02.BubbleSortAsc(arr5)
 	fmt.Printf("Отсортированные массивы:\n%v\n%v\n\n", arr4, arr5)
 
 	mergedArray := make([]int, (len(arr4) + len(arr5)))

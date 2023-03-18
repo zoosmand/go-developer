@@ -1,4 +1,4 @@
-package main
+package task02
 
 import (
 	"reflect"
@@ -27,7 +27,7 @@ func TestBubbleSortAsc(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run(test.name, func(t *testing.T) {
-			bubbleSortAsc(test.arg)
+			BubbleSortAsc(test.arg)
 			if !reflect.DeepEqual(test.arg, test.want) {
 				t.Log("func bubbleSortAsc(arr []int)")
 				t.Logf("Testing data name: %s", test.name)
@@ -54,7 +54,7 @@ func TestBubbleSortDesc(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run(test.name, func(t *testing.T) {
-			bubbleSortDesc(test.arg)
+			BubbleSortDesc(test.arg)
 			if !reflect.DeepEqual(test.arg, test.want) {
 				t.Log("func bubbleSortDesc(arr []int)")
 				t.Logf("Testing data name: %s", test.name)
