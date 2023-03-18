@@ -1,4 +1,4 @@
-package main
+package extra
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"github.com/zoosmand/usecons/v3"
 )
 
-func main() {
+func Quotes() {
 	h := "Задача 12.7. Скобки"
 	fmt.Print(usecons.Header(&h))
 

@@ -1,16 +1,16 @@
-package main
+package t003
 
 import (
 	"fmt"
 	"log"
 	"os"
 
-	usrcons "../../packages/usrcons"
+	"github.com/zoosmand/usecons/v3"
 )
 
-func main() {
+func IReader() {
 	h := "Задача 12.3. Интерфейс io.Reader."
-	usrcons.PrintHeader(&h)
+	fmt.Println(usecons.Header(&h))
 
 	logFile := "log.txt"
 
