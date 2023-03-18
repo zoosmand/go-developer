@@ -1,4 +1,4 @@
-package main
+package t002
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"github.com/zoosmand/usecons/v3"
 )
 
-func main() {
+func LinkedArgs() {
 	h := "Задача 13.2. Функция, принимающая значение по ссылке."
 	fmt.Print(usecons.Header(&h))
 

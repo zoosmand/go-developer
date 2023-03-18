@@ -1,4 +1,4 @@
-package main
+package t001
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"github.com/zoosmand/usecons/v3"
 )
 
-func main() {
+func Arguments() {
 	h := "Задача 13.1. Функция, принимающая аргументы."
 	fmt.Print(usecons.Header(&h))
 
