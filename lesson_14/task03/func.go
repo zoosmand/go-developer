@@ -1,4 +1,4 @@
-package main
+package task03
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"github.com/zoosmand/usecons/v3"
 )
 
-func main_task_03() {
+func Returns() {
 	h := "Задача 14.3. Именованные возвращаемые значения."
 	fmt.Print(usecons.Header(&h))
 

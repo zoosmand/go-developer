@@ -1,4 +1,4 @@
-package main
+package task01
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 	"github.com/zoosmand/usecons/v3"
 )
 
-func main_task_01() {
+func Returns() {
 	h := "Задача 14.1. Функция, возвращающая результат."
 	fmt.Print(usecons.Header(&h))
 

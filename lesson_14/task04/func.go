@@ -1,4 +1,4 @@
-package main
+package task04
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ var globalVar1 = 1234
 var globalVar2 = 5678
 var globalVar3 = 9012
 
-func main_task_04() {
+func Returns() {
 	h := "Задача 14.4. Именованные возвращаемые значения."
 	fmt.Print(usecons.Header(&h))
 

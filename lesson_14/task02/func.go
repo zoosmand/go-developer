@@ -1,4 +1,4 @@
-package main
+package task02
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 
 const threshold = 25
 
-func main_task_02() {
+func Returns() {
 	h := "Задача 14.2. Функция, возвращающая несколько значений."
 	fmt.Print(usecons.Header(&h))
 
