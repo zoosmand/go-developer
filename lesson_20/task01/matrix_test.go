@@ -91,7 +91,7 @@ func TestCalculateDeterminantLevel4(t *testing.T) {
 }
 
 func TestCalculateDeterminantLevel5(t *testing.T) {
-	level := 4
+	level := 5
 	m1 := usecons.GenerateIntSquareMatrix(level)
 	m2 := transposeMatrix(m1)
 
