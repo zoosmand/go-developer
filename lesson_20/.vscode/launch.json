@@ -27,7 +27,7 @@
             "type": "go",
             "request": "launch",
             "mode": "test",
-            "program": "${workspaceFolder}",
+            "program": "${workspaceFolder}/task02",
             "env": {},
             "args": []
         }

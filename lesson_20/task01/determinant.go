@@ -9,15 +9,15 @@ import (
 	"github.com/zoosmand/usecons/v3"
 )
 
-func Determinant() {
-	h := "Task 20.1 The determinant"
+func DeterminantOfMatrix() {
+	h := "Task 20.1 Calculation of a matrix determinant"
 	fmt.Println(usecons.Header(&h))
 
 	var printResult = func(l int) {
 
 		m := usecons.GenerateIntSquareMatrix(l)
 
-		printMatix(&m)
+		PrintMatix(&m)
 		d := calculateDeterminant(m)
 
 		fmt.Printf("\n---\nThe determinant of the matrix is %v\n---\n", d)
@@ -57,7 +57,7 @@ func calculateDeterminant(m [][]int) int {
 	return det
 }
 
-func printMatix(m *[][]int) {
+func PrintMatix(m *[][]int) {
 	mm := *m
 	for i := range mm {
 		fmt.Println(mm[i])
