@@ -18,6 +18,9 @@ func AnonymousFunctions() {
 
 }
 
-func CallbackExecutor(f func(int, int) int, a int, b int) int {
-	return f(a, b)
+func CallbackExecutor(f func(int, int) int, a int, b int) (result int) {
+	defer func() {
+		result = f(a, b)
+	}()
+	return
 }
